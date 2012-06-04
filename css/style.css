@@ -1,0 +1,17 @@
+	body
+	{
+		background: #FFF url('../img/android.png') right bottom no-repeat;
+		color: #999;
+		padding:40px;
+		font-family: Tahoma, 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	h1
+	{
+		font-size:500%;
+		line-height:150%;
+	}
+
+	.row
+	{
+		margin:60px;
+	}
