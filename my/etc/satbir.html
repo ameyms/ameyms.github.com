@@ -43,25 +43,25 @@ function publish_update()
 	counter.innerHTML = "";
 	if(remaining.getMonth() == 2)
 	{
-		counter.innerHTML += "1 <span class='unit'>month.</span> ";
+		counter.innerHTML += "1 <span class='unit'>month.</span><br/> ";
 	}
 	else if(remaining.getMonth() > 2)
 	{
-		counter.innerHTML += (remaining.getMonth()-1)+" <span class='unit'>months.</span> ";
+		counter.innerHTML += (remaining.getMonth()-1)+" <span class='unit'>months.</span><br/> ";
 	}
 	
 	if(remaining.getDay() == 2)
 	{
-		counter.innerHTML += "1 <span class='unit'>day.</span> ";
+		counter.innerHTML += "1 <span class='unit'>day.</span><br/> ";
 	}
 	else if(remaining.getDay() > 2)
 	{
-		counter.innerHTML += (remaining.getDay()-1)+" <span class='unit'>days.</span> ";
+		counter.innerHTML += (remaining.getDay()-1)+" <span class='unit'>days.</span><br/> ";
 	}
 
 	if(remaining.getHours() == 1)
 	{
-		counter.innerHTML += "1 <span class='unit'>hour.</span> ";
+		counter.innerHTML += "1 <span class='unit'>hour.</span><br/> ";
 	}
 	else if(remaining.getHours() > 1)
 	{
@@ -70,16 +70,16 @@ function publish_update()
 		{
 			counter.innerHTML += '0';
 		}
-		counter.innerHTML += (remaining.getHours())+" <span class='unit'>hours.</span> ";
+		counter.innerHTML += (remaining.getHours())+" <span class='unit'>hours.</span><br/> ";
 	}
 	else if(remaining.getMonth() > 1 || remaining.getDay() > 1)
 	{
-		counter.innerHTML += "00 <span class='unit'>hours.</span> ";
+		counter.innerHTML += "00 <span class='unit'>hours.</span> <br/>";
 	}
 	
 	if(remaining.getMinutes() == 1)
 	{
-		counter.innerHTML += "1 <span class='unit'>minute.</span> ";
+		counter.innerHTML += "1 <span class='unit'>minute.</span><br/> ";
 	}
 	else if(remaining.getMinutes() > 1)
 	{
@@ -87,16 +87,16 @@ function publish_update()
 		{
 			counter.innerHTML += '0';
 		}
-		counter.innerHTML += (remaining.getMinutes())+" <span class='unit'>minutes.</span> ";
+		counter.innerHTML += (remaining.getMinutes())+" <span class='unit'>minutes.</span><br/> ";
 	}
 	else if(remaining.getMonth() > 1 || remaining.getDay() > 1 || remaining.getHours() > 0)
 	{
-		counter.innerHTML += "00 <span class='unit'>minutes.</span> ";
+		counter.innerHTML += "00 <span class='unit'>minutes.</span><br/> ";
 	}
 	
 	if(remaining.getSeconds() == 1)
 	{
-		counter.innerHTML += "01 <span class='unit'>second.</span> ";
+		counter.innerHTML += "01 <span class='unit'>second.</span><br/> ";
 	}
 	else
 	{
@@ -104,7 +104,7 @@ function publish_update()
 		{
 			counter.innerHTML += '0';
 		}
-		counter.innerHTML += (remaining.getSeconds())+" <span class='unit'>seconds.</span> ";
+		counter.innerHTML += (remaining.getSeconds())+" <span class='unit'>seconds.</span> <br/>";
 	}
 	
 	setTimeout(publish_update, 500);
