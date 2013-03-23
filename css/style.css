@@ -32,7 +32,18 @@
 	{
 
 	}
-	
+	.footer_links
+	{
+		font-size: 18px;
+	}
+	.footnote
+	{
+		margin-top:40px;
+		font-size: 12px;
+		border-top: 1px solid #999;
+		padding-top: 20px;
+		color:#666;
+	}
 	a:link, a:link:visited, a:visited
 	{
 		color:#072B8A;
