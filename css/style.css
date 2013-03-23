@@ -2,11 +2,10 @@
 	{
 		background: #FFF url('../img/old_mathematics_2X.png');
 		color: #666;
-		padding:100px;
+		padding:40px;
 		font-family: Roboto, 'Open Sans', Tahoma, 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 22px;
 		font-weight:300;
-		line-height:1em;
 		
 	}
 	h1
@@ -31,7 +30,7 @@
 
 	p
 	{
-		line-height:1.4em;
+
 	}
 	
 	a:link, a:link:visited, a:visited
