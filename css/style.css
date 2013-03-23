@@ -1,17 +1,45 @@
 	body
 	{
-		background: #FFF url('../img/android.png') right bottom no-repeat;
-		color: #999;
-		padding:40px;
-		font-family: Tahoma, 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		background: #FFF url('../img/old_mathematics_2X.png');
+		color: #666;
+		padding:100px;
+		font-family: Roboto, 'Open Sans', Tahoma, 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 22px;
+		font-weight:300;
+		line-height:1em;
+		
 	}
 	h1
 	{
-		font-size:500%;
-		line-height:150%;
+		font-family:Lato;
+		font-weight:900;
+		font-size:72px;
+		color:#f3f3f3;
+		text-shadow: #FFF 0px 1px 1px, #333 0px -1px 1px;
+		margin-bottom:80px;
+		
+	}
+	
+	h2
+	{
+		color: #666;
+		font-family: 'Open Sans', Tahoma, 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 36px;
+		font-weight:200;
+		
 	}
 
-	.row
+	p
 	{
-		margin:60px;
+		line-height:1.4em;
+	}
+	
+	a:link, a:link:visited, a:visited
+	{
+		color:#072B8A;
+	}
+	
+	a:hover, a:visited:hover
+	{
+		color:#0B6AF3;
 	}
