@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Satish &times; Swatis Shaadi Countdown</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:200,100' rel='stylesheet' type='text/css'>
+<style>
+	#counter
+	{
+		font-family:Roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight:100;
+		font-size:96px;
+		margin:0 auto;
+		color:#333;
+		text-align:center;
+		
+	}
+	
+	#counter .unit
+	{
+		font-family:Roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight:100;
+		font-size:42px;
+		color:#666;
+	}
+	body, html
+	{
+		width:99%;
+		height:95%;
+		background:#fcfcfc;
+		apdding:0 auto;
+	}
+</style>
+<script>
+function start_counting()
+{
+	setTimeout(publish_update, 500);
+}
+function publish_update()
+{
+	var wedding = new Date(2013,5,31,12,0,0,0);
+	var now  = new Date();
+	
+	var counter = document.getElementById('counter');
+	var remaining = new Date((wedding.getTime() - now.getTime()));
+	var years =  '';
+	
+	counter.innerHTML = "";
+	if(remaining.getMonth() == 2)
+	{
+		counter.innerHTML += "1 <span class='unit'>month.</span><br/> ";
+	}
+	else if(remaining.getMonth() > 2)
+	{
+		counter.innerHTML += (remaining.getMonth()-1)+" <span class='unit'>months.</span><br/> ";
+	}
+	
+	if(remaining.getDay() == 2)
+	{
+		counter.innerHTML += "1 <span class='unit'>day.</span><br/> ";
+	}
+	else if(remaining.getDay() > 2)
+	{
+		counter.innerHTML += (remaining.getDay()-1)+" <span class='unit'>days.</span><br/> ";
+	}
+
+	if(remaining.getHours() == 1)
+	{
+		counter.innerHTML += "1 <span class='unit'>hour.</span><br/> ";
+	}
+	else if(remaining.getHours() > 1)
+	{
+	
+		if(remaining.getHours() <10)
+		{
+			counter.innerHTML += '0';
+		}
+		counter.innerHTML += (remaining.getHours())+" <span class='unit'>hours.</span><br/> ";
+	}
+	else if(remaining.getMonth() > 1 || remaining.getDay() > 1)
+	{
+		counter.innerHTML += "00 <span class='unit'>hours.</span> <br/>";
+	}
+	
+	if(remaining.getMinutes() == 1)
+	{
+		counter.innerHTML += "1 <span class='unit'>minute.</span><br/> ";
+	}
+	else if(remaining.getMinutes() > 1)
+	{
+		if(remaining.getMinutes() <10)
+		{
+			counter.innerHTML += '0';
+		}
+		counter.innerHTML += (remaining.getMinutes())+" <span class='unit'>minutes.</span><br/> ";
+	}
+	else if(remaining.getMonth() > 1 || remaining.getDay() > 1 || remaining.getHours() > 0)
+	{
+		counter.innerHTML += "00 <span class='unit'>minutes.</span><br/> ";
+	}
+	
+	if(remaining.getSeconds() == 1)
+	{
+		counter.innerHTML += "01 <span class='unit'>second.</span><br/> ";
+	}
+	else
+	{
+		if(remaining.getSeconds() <10)
+		{
+			counter.innerHTML += '0';
+		}
+		counter.innerHTML += (remaining.getSeconds())+" <span class='unit'>seconds.</span> <br/>";
+	}
+	
+	setTimeout(publish_update, 500);
+
+}
+
+</script>
+</head>
+<body>
+	<center>
+	
+	<div id="counter">
+
+	</div>
+	</center>
+	<script>
+		start_counting();
+	</script>
+</body>
+</html>
