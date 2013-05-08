@@ -1,7 +1,7 @@
 	body
 	{
-		background: #FFF url('../img/old_mathematics_2X.png');
-		color: #666;
+		background: #d3d3d3 /*url('../img/purty_wood_2X.png')*/;
+		color: #333;
 		padding:40px;
 		font-family: Roboto, 'Open Sans', Tahoma, 'Lucida Grande', "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 22px;
@@ -14,7 +14,7 @@
 		font-weight:900;
 		font-size:72px;
 		color:#f3f3f3;
-		text-shadow: #FFF 0px 1px 1px, #333 0px -1px 1px;
+		text-shadow: 0px 0px 2px #686868, 0px -1px 1px #ddd, 0px -2px 1px #d6d6d6, 0px -3px 1px #ccc, 0px -4px 1px #c5c5c5, 0px -5px 1px #c1c1c1, 0px -6px 1px #bbb, 0px -7px 1px #777;
 		margin-bottom:80px;
 		
 	}
