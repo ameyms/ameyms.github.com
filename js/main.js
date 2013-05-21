@@ -23,13 +23,20 @@ var ameyms = {} || ameyms;
 	var renderAboutMe = function(profile)
 	{
 		//console.log(profile);
-		$('#gplus-desc').removeClass('loading');
-		$('#gplus-desc').addClass('textReady');
+		if(profile && profile.aboutMe && profile.image)
+		{
+			$('#gplus-desc').removeClass('loading');
+			$('#gplus-desc').addClass('textReady');
 
-		$('#gplus-desc').html(profile.aboutMe);	
-		$('#myPhoto').attr('src', profile.image.url);
+			$('#gplus-desc').html(profile.aboutMe);	
+			$('#myPhoto').attr('src', profile.image.url);
 
-		loadLatestPost();	
+			loadLatestPost();	
+		}
+		else
+		{
+			$('#gplus-desc').html('Well, I don&apos;t know what to say. But my <a href="https://plus.google.com/101640091246231296580/about">Google+ profile</a> would tell you a thing or two about me.');	
+		}
 
 	}
 	window.onGApiLoad = function()

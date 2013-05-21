@@ -80,20 +80,24 @@
 	a:link, a:link:visited, a:visited
 	{
 		color:#072B8A;
+		text-decoration: none;
 	}
 	
 	a:hover, a:visited:hover
 	{
 		color:#0B6AF3;
+		text-decoration: underline;
 	}
 
 	.proflinkWrapper a:hover, .proflinkWrapper a:visited:hover
 	{
-		color:#0B6AF3;
-		text-decoration: none;
+		color:#333;
+		font-weight: bold;
+		text-decoration: underline;
 	}
 	.proflinkWrapper a:link, .proflinkWrapper a:link:visited, .proflinkWrapper a:visited
 	{
-		color:#072B8A;
+		color:#333;
+		font-weight: bold;
 		text-decoration: none;
 	}
