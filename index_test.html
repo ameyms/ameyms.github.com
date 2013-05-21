@@ -1,0 +1,59 @@
+<html>
+	<head>
+	</head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Amey Sakhadeo" />
+	<meta name="viewport" content="width=device-width">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:200,100,300,400|Lato:100,200,900|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<title>Amey Sakhadeo</title>
+	<body>
+		 <div class="container">
+		 	<div class="row-fluid">
+    			<div class="span12">
+				<h1>Amey Sakhadeo</h1>
+			    <h2>Hi! I am Amey.</h2>
+				
+				<p>I am a UI engineer @ Symantec. </p>
+				<P>I love building stuff (especially beautiful software). I relish Java, JavaScript and Android<br/>
+				In my free time, I draw, eat, write poem, try to be merry and very infrequently <a href="http://blog.ameyms.com">blog</a>.
+				</p>
+				<p>Oh, did I mention I write <a href="http://github.com/ameyms">code</a>?</p>
+				
+				<p>You can reach me over email: <a href="http://www.google.com/recaptcha/mailhide/d?k=01VaqjyRLZTnhDrkzjG1UVCg==&amp;c=m51lJzDFNtqIMeOEwgfzwQ==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501VaqjyRLZTnhDrkzjG1UVCg\75\75\46c\75m51lJzDFNtqIMeOEwgfzwQ\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">me shift 2 ameyms dot com</a>
+					<div class="footer_links">
+					<a href="http://twitter.com/ameyms">Twitter</a> // <a href="http://gplus.to/amey">Google+</a> // <a href="http://blog.ameyms.com">Blog</a> // <a href="https://github.com/ameyms">Github</a>
+					</div>
+					<div class="footnote">This webpage is hosted on Github.com</a><div>
+				</div>
+			</div>
+			
+		</div>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js?onload=onGApiLoad';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  function onGApiLoad()
+  {
+  	console.log(gapi);
+  	gapi.client.setApiKey('AIzaSyBb7vK324yI0SltmPtBk_rVOqF7y7kDTBs');
+  	gapi.client.load('plus', 'v1', function(){
+
+
+  		  	var req = gapi.client.plus.people.get({userId :'101640091246231296580'});
+  			req.execute(function(resp){
+
+  			console.log(resp);
+  		});
+  	});
+
+  }
+</script>
+	</body>
+
+</html>
