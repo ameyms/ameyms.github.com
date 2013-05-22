@@ -30,7 +30,7 @@
 
 	.noshow
 	{
-		/*display: none;*/
+		display: none;
 	}
 
 	.loading
@@ -54,7 +54,7 @@
 		top: 20px;
 		color:#333;
 		font-size: 12px;
-		padding:10px;
+		padding:15px;
 		background: #f6f6f6;
 		border-radius: 10px;
 		display: flex;
