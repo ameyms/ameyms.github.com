@@ -149,6 +149,17 @@ var getLogCounterFrom = function(from)
 
 var logCounter = getlogCounterFrom(5);
 
+
+//Another example
+function getOpers(orig) {
+
+ return { incr: function(){console.log(++orig);}, 
+          print: function(){console.log(orig);}
+        };
+}
+
+opers = getOpers(5);
+
 //------------------------------------------------------------------------
 
 /*Classes in Javascript*/
@@ -243,7 +254,9 @@ var Jedi = function () {
 var __JediConstructor = Jedi;
 Jedi.prototype = Human.prototype;
 Jedi.prototype.constructor = __JediConstructor;
-
+Jedi.prototype.useForce = function () {
+    console.log('Using the force');
+}
 
 
 
