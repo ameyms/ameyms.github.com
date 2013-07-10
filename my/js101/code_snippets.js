@@ -147,7 +147,7 @@ var getLogCounterFrom = function(from)
 	}
 }
 
-var logCounter = getlogCounterFrom(5);
+var logCounter = getLogCounterFrom(5);
 
 
 //Another example
@@ -251,9 +251,9 @@ var Jedi = function () {
 	Human.call(this);
 
 }
-var __JediConstructor = Jedi;
+//var __JediConstructor = Jedi;
 Jedi.prototype = Human.prototype;
-Jedi.prototype.constructor = __JediConstructor;
+//Jedi.prototype.constructor = __JediConstructor;
 Jedi.prototype.useForce = function () {
     console.log('Using the force');
 }
