@@ -1,0 +1,100 @@
+#counter
+{
+	font-family:Roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-size:96px;
+	margin:0 auto;
+	color:#333;
+	text-align:center;
+	
+}
+
+#counter .unit
+{
+	font-family:Roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-size:48px;
+	color:#999;
+}
+div {
+
+	display: inline-block;;
+}
+div::after
+{
+	content: '  ';
+}
+
+@media (max-width: 480px)
+{
+	#counter
+	{
+		font-size:48px;
+	}
+
+	#counter .unit
+	{
+		font-size:24px;
+	}
+
+}
+
+@media (min-width: 480px) and (max-width: 800px)
+{
+	#counter
+	{
+		font-size:56px;
+	}
+
+	#counter .unit
+	{
+		font-size:28px;
+	}
+
+}
+
+@media (max-width: 800px)
+{
+	div
+	{
+		display: block;
+	}
+}
+@media (min-width: 800px) and (max-width: 1024px)
+{
+	#counter
+	{
+		font-size:64px;
+	}
+
+	#counter .unit
+	{
+		font-size:32px;
+	}
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px)
+{
+	#counter
+	{
+		font-size:72px;
+		margin:0 auto;	
+	}
+
+	#counter .unit
+	{
+		font-size:36px;
+	}
+
+}
+
+
+body, html
+{
+	width:99%;
+	height:95%;
+	background:#fcfcfc;
+	padding:0 auto;
+}
