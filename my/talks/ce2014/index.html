@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Browser On Steroids : Taking Web Apps To The Next Level</title>
+
+		<meta name="description" content="Browser On Steroids : Taking Web Apps To The Next Level">
+		<meta name="author" content="Amey Sakhadeo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/cuttingedge.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="intro">
+					<div class="logowrap">
+						<img src="images/ce2014_logo.png" class="logo" />
+					</div>
+					<h1>Browser On Steroids</h1>
+					<h3>Taking Web Apps To The Next Level</h3>
+					<h4>Cutting Edge 2014</h4>
+				</section>
+
+
+				<!-- Slide 2 -->
+				<section data-background="#ffd200" data-background-transition="slide">
+					<h2>$> whoami</h2>
+					<div style="float:left; width:70%; display:block;">
+					<ul>
+						<big>
+						<li>I am Amey Sakhadeo</li>
+						<li>Work on Java, Javascript and GWT for the Data Insight team</li>
+						<li>Contribute to <b>jQuery</b> in my free time</li>
+						<li><b>@ameyms</b> on Twitter</li>
+						<li>Homepage: <b>http://ameyms.com</b></li>
+						</big>
+					</ul>
+					<br/><br/><br/><br/>
+					<center><h6>#ce2014 #html5<h6></center>
+					</div>
+					<img src="images/qr_code.png" style="float:left; width:256px; display:block; box-shadow:none;"/>
+					<div style="clear:both"> </div>
+				</section>
+
+				<section data-background="#EDEDED">
+					<h2>Wachu talkin' 'bout</h2>
+
+					<ul class="">
+						<li class="fragment"><em>HTML5</em> APIs and Features</li>
+						<li class="fragment">Briefly Touch base on <em>CSS3</em></li>
+						<li class="fragment"><em>Bleeding edge</em> browser technology</li>
+						<li class="fragment">No demos</li>
+						<li class="fragment">No code snippets</li>
+					</ul>
+					<center>
+					<div class="techlogos">
+						<img src="images/js_Logo_small.png" class="fragment roll-in" />
+						<img src="images/css3logo_128.png" class="fragment roll-in" />
+						<img src="images/HTML5_Logo_128.png" class="fragment roll-in" />
+						
+					</div>
+					<center>
+				</section>
+
+				<section  class="whiteOnBlack" data-background="#000000">
+					<h4>Disclaimer</h4>
+					<img src="images/splat.gif" width="800px" height="600px" />
+				</section>				
+
+				<section data-background="#ededed">
+					<img src="images/happycat.jpg">
+					*This is you after this talk
+				</section>
+				<!-- Slide 3 -->
+				<section data-background="#000">
+					<img src="images/darth.jpg" />
+				</section>
+
+
+				<section class="whiteOnBlack" data-cackground="#dedede" data-background="#87593a" data-background-transition="slide">
+					<h2> The Web Has Evolved.</h2>
+					<!--<img src="images/evolution_darth.png" />-->
+
+					<img src="images/evolution.png" />
+				</section>
+
+				
+
+
+				<!-- Slide 5 -->
+				<section class="whiteOnBlack" data-background="images/enterprise_bridge.jpg" data-background-transition="slide">
+				<h2><b>Storing &amp; Accessing Local Data</b></h2>
+				<img class="fragment roll-in"src="images/data_startrek.png" />
+				</section>
+
+				<section class="whiteOnBlack1" data-background="images/tablecloth.jpg">
+					<h2><b>Cookies are not for caching data.</b></h2>
+					<img src="images/cookie_bite.png" />
+				</section>
+
+				<section class="whiteOnBlack" data-background="#333">
+					<img src="images/cookies.jpg" />
+				</section>
+
+				<!-- Local Storage -->
+				<section >
+					<section class="whiteOnBlack" data-background="#333" data-background-transition="slide">
+						<h2>HTML5 <em>LocalStorage</em></h2>
+					</section>
+					<section  class="whiteOnBlack" data-background="#333" >
+						<h2>HTML5 <em>LocalStorage</em> is...</h2>
+						<h3 class="fragment roll-in"><b>persistent</b></h3>
+						<h3 class="fragment roll-in">a <b>string to string</b> map</h3>
+						<h3 class="fragment roll-in"><b>synchronous</b></h3>
+					</section>	
+				</section>
+
+				<!-- IndexedDB -->
+				<section >
+					<section class="whiteOnBlack" data-background="#333" data-background-transition="slide">
+						<h2>HTML5 <em>IndexedDB</em></h2>
+					</section>
+					<section  class="whiteOnBlack" data-background="#333" >
+						<h2>HTML5 <em>IndexedDB</em> is...</h2>
+						<h3 class="fragment roll-in"><b>persistent</b></h3>
+						<h3 class="fragment roll-in"><b>NoSQL</b></h3>
+						<h3 class="fragment roll-in"><b>async</b></h3>
+						<h3 class="fragment roll-in"><b>permission</b> based</h3>
+					</section>	
+				</section>
+
+
+				<section class="whiteOnBlack" data-background="#333" data-background-transition="cube">
+					<section>
+						<h2>HTML5 <em>FileSystem</em></h2>
+					</section>
+					<section  class="whiteOnBlack" data-background="#333" >
+						<h2>HTML5 <em>FileSystem</em> is...</h2>
+						<h3 class="fragment roll-in"><b>permission</b> based</h3>
+						<h3 class="fragment roll-in"><b>sandboxed</b></h3>
+						<h3 class="fragment roll-in"><b>synchronous</b> or <b>async</b></h3>
+						<h3 class="fragment roll-in"><b>quota </b>based</h3>
+					</section>	
+				</section>
+
+
+
+				<section class="whiteOnBlack" data-background="images/good_connection.jpg">
+					<h2><b>Staying Connected</b></h2>
+					<h3 class="fragment">Communicating with server</h3>
+				</section>
+
+
+				<section class="whiteOnBlack" data-background="#ededed" data-background-transition="default">
+					<img src="images/inception_websockets.jpg" />
+				</section>
+
+				<section class="whiteOnBlack" data-background="#821111">
+					<section>
+						<h3>Requiring user to refresh is <b>BAD</b></h3>
+					</section>
+					<section>
+						<h3>Constantly polling through timers is <b>BAD</b></h3>
+					</section>
+					<section>
+						<h3>Having stale data on GUI is <b>WORSE</b></h3>
+					</section>
+				</section>
+				<section data-background="#ededed">
+					<img src="images/websockets_meme2.jpg" />
+				</section>
+
+				
+
+
+				<section >
+					<section class="whiteOnBlack" data-background="#e57200">
+						<h2>Plug in to <b>WebSockets</b>.</h2>
+						<img src="images/websockets2.png">
+					</section>
+
+					<section  class="orangeback" data-background="#e57200" >
+						<h2><b>WebSockets</b></h2>
+						<h3 class="fragment roll-in">are full <b>duplex</b></h3>
+						<h3 class="fragment roll-in">work over <b>TCP</b> port 80</h3>
+						<h3 class="fragment roll-in"><b>encrypted</b> or <b>unencrypted</b></h3>
+					</section>	
+				</section>
+
+				<section class="whiteOnBlack" data-background="images/good_connection.jpg">
+					<h2><b>Staying Connected: Part Deux</b></h2>
+					<h3 class="fragment">Talking to <b>peers</b></h3>
+				</section>
+
+				<section data-background="#ededed">
+					<img src="images/NOTSURE_WEBRTC.png" />
+
+				</section>
+
+				<section data-background="#ededed">
+					<h2 style="color:#357e00">WebRTC</h2>
+					
+					<img src="images/google-webrtc-logo.png" />
+
+				</section>
+
+				<section class="greenback" data-background="#357e00">
+					<h2>WebRTC</h2>
+					
+						<h3 class="fragment">peer-to-peer communication</h3>
+						<h3 class="fragment"><b>binary</b> data or plain <b>text</b></h3>
+						<h3 class="fragment"><b>reliable</b> or <b>unreliable</b> delivery</h3>
+						<h3 class="fragment"><b>security</b> is built in (DTLS, SRTP)</h3>
+				</section>
+
+				<section data-background="#ededed">
+					<h3>WebRTC Flow</h3>
+					
+					<img src="images/webrtc_flow.png" />
+				</section>
+
+				
+
+				<section class="whiteOnBlack" data-background="#003366">
+					<h2>Making The Web Dance.</h2>
+					<img src="images/nyan.gif">
+				</section>
+
+				<section class="blueback" data-background="#003366">
+					<!--<img src="images/clapper.png" /> -->
+					<section>
+							<h2>SVG</h2>
+							<br/>
+						<h3 class="fragment roll-in">draw <b>vector</b> shapes</h3>
+						<h3 class="fragment roll-in">lines, curves, rectangles, circles</h3>
+						<h3 class="fragment roll-in"><b>translation</b> and <b>scaling</b></h3>
+						<h3 class="fragment roll-in">datainsight the <b>social network map</b> demo!</h3>
+					</section>
+					<section>
+							<h2>Canvas</h2><br/>
+								<h3 class="fragment roll-in"><b>mspaint</b> for the web</h3>
+								<h3 class="fragment roll-in">no additional dom objects</h3>
+								<h3 class="fragment roll-in">datainsight performance <b>charts</b> </h3>
+					</section>
+					<section>
+							<h2>CSS3 Animations</h2><br/>
+								<h3 class="fragment roll-in">animations on <b>separate thread</b></h3>
+								<h3 class="fragment roll-in">hardware acceleration</h3>
+								<h3 class="fragment roll-in"><b>*this* presentation</b> uses it!</h3>
+					</section>
+					<section>
+							<h2>Animation Frame</h2><br/>
+								<h3 class="fragment roll-in">animations on <b>separate thread</b></h3>
+								<h3 class="fragment roll-in">pause animations when <i>not</i> required</h3>
+								<h3 class="fragment roll-in">save <b>CPU</b> and <b>battery</b>!</h3>
+					</section>
+					<section>
+							<h2>WebGL</h2><br/>
+								<h3 class="fragment roll-in"><b>opengl</b> for the web</h3>
+								<h3 class="fragment roll-in">complex <b>3D</b> rendering</h3>
+								<h3 class="fragment roll-in">games, CAD apps</h3>
+								<h3 class="fragment roll-in">three.js</h3>
+					</section>
+					
+				</section>
+
+
+
+
+				<section data-background="#ededed">
+					<h2>Shadow DOM</h2>
+					<h4>&amp; Web Components &amp; HTML Imports</h4>
+					<img src="images/shadows.png" />
+				</section>
+
+				<section class="whiteOnBlack" data-background="#77619c" data-background-transition="slide">
+					
+						<h3>To build something so simple...</h3>
+						<img src="images/navbar.png" />
+				</section>
+
+
+				<section data-background="images/lotsa_code2.png" data-background-transition="slide">
+					
+				</section>
+
+
+				<section data-background="#ededed" data-background-transition="slide">
+					<img src="images/boromir_webcomponents.png" />
+				</section>
+
+				<section data-background="images/gray_back.jpg" data-background-transition="slide">
+					<h2>This is how it should be.</h2>
+
+					<pre><code class="xml">
+
+	<my-navbar>
+		<my-navitem click="foo">Home</my-navitem>
+		<my-navitem click="foo">About</my-navitem>
+		<my-navitem click="foo">Contact</my-navitem>
+
+		<!-- Search component -->
+		<my-navsearch onreturn="zap"></my-navsearch>
+	</my-navbar>
+
+
+					</code></pre>
+
+				</section>
+
+				<section class="whiteOnBlack" data-background="#333333" data-background-transition="zoom">
+					<big>
+					<code style="font-size:1.2em;line-height:1.2em">
+						&lt;my-tree root="/foo/bar/baz" /&gt;
+					</code>
+					</big>
+				</section>
+
+
+				<section data-background="images/gray_back.jpg" data-background-transition="cube">
+					<h2>The Webkit DatePicker...</h2>
+					<input type="date" name="start_date" style="width:720px;height:70px;font-size:48px;border:1px solid #999"/>
+				</section>
+
+
+				<section data-background="#ededed" data-background-transition="cube">
+					<h2>..looks like <b>this</b> under the hood</h2>
+					<img src="images/shadow_dom.jpg" />
+					<img class="fragment roll-in" src="images/this_is_shadow.png" />
+
+				</section>
+
+
+				<section class="whiteOnBlack" data-background="#272822" data-background-transition="slide">
+					<h4>HTML Imports allow you to package your components</h4>
+					<img src="images/imports.png" />
+
+				</section>
+
+
+
+
+				<section class="whiteOnBlack" data-background="#333333" data-background-transition="cube">
+					<h2>&#9733;&#9733;&#9733;&#9733;&#9733;</h2>
+
+					<q style="font-size:1.4em">
+						" Shadow DOM is encapsulation for the Web."
+						
+					</q>
+
+				</section>
+
+
+				<section class="whiteOnBlack" data-background="#333333" data-background-transition="cube">
+					<h2>&#9733;&#9733;&#9733;&#9733;&#9733;</h2>
+
+					<q style="font-size:1.4em">
+						" HTML Imports are the <code>#include</code> of the Web."
+						
+					</q>
+
+				</section>
+
+
+				<section data-background="#ededed" data-background-transition="cube">
+					Interested in more?
+					<br/><br/>
+					<h2>polymer-project.org</h2>
+				</section>
+
+
+				<section class="whiteOnBlack" data-background="images/thats_all_folks.gif" data-transition="cube">
+					
+
+				</section>
+
+				<section data-background="#ededed">
+					<small><i>Questions?</i></small>
+					<h2>Use the mic, Luke</h2>
+					<h3>May The Source Be With You!</h3>
+					<br/><br/><br/>
+					<img src="images/yoda.png" />
+				</section>
+
+				<section  class="whiteOnBlack" data-background="images/twitter_back.jpg">
+					<h2>@ameyms</h2>
+					<img src="images/twitter_logo.png"/>
+					<h3>#ce2014</h3>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

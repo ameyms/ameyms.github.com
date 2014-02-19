@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,500,700,400italic,700italic);
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: white;
+  background-color: white; }
+
+.reveal {
+  font-family: "Open Sans", "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: black; }
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: black;
+  font-family: "Roboto Condensed","News Cycle", Impact, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none; }
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+.reveal h1,
+.reveal h2
+{
+  margin: 0 0 50px 0;
+}
+
+.reveal h2 em
+{
+    color: #ef7c00;
+    background: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+ }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: orange;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #0000f1;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  /*
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  */
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ff8a00;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #ffa200; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #ffa200; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #ffa200; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #ffa200; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #ff8a00; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #ff8a00; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #ff8a00; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #ff8a00; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #ffa200;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #ffa200; }
+
+
+/*********************************************
+*  CUTTING EDGE 2014 THEME
+**********************************************/
+
+.whiteOnBlack
+{
+    color:#EDEDED !important;
+}
+
+.orangeback h3
+{
+    color: #ffecc7;
+}
+
+.orangeback h2
+{
+  color: #FFF;
+}
+.blueback h3
+{
+  color: #EDEDED;
+}
+
+.blueback h2
+{
+  color: #ff99ff;
+  font-weight:600;
+}
+
+.greenback h2
+{
+  color: #ffdf2c;
+  font-weight: 600;
+}
+
+.greenback h3
+{
+  color: #fffae1;
+}
+.whiteOnBlack h2, .whiteOnBlack h3, .whiteOnBlack h4
+{
+    color:#FFFFFF;
+}
+
+ul li
+{
+  line-height: 1.8em;
+  margin-bottom: 20px;
+}
+
+
+em
+{
+  display: inline;
+  background: #ffee78;
+  border-bottom: 2px solid #ffc000;
+  font-style: normal;
+}
+
+
+img.logo
+{
+  border: 0px solid;
+  box-shadow: none !important;
+  float: right;
+  padding-bottom: 50px;
+}
+
+div.logowrap::after
+{
+  content: "";
+  display: block;
+  clear:both;
+}
+
+
+div.techlogos
+{
+    padding: 50px;
+}
+div.techlogos img
+{
+  border: 0px solid;
+  box-shadow: none !important;
+}
+
+
+section.intro
+{
+
+}
+
+ul li
+{
+  line-height: 5.5em;
+}
