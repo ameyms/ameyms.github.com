@@ -39,7 +39,7 @@ var ameyms = { } || ameyms;
 
             myPhotoEl.attr( 'src', profile.image.url + '&sz=120' );
 
-            loadLatestPost();
+            // loadLatestPost();
         } else {
             gplusDescEl.html( 'Well, I don&apos;t know what to say. ' +
               'But my <a href="https://plus.google.com/101640091246231296580/about">' +
