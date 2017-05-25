@@ -1,0 +1,57 @@
+<html>
+	<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Amey Sakhadeo" />
+	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:200,100,300,400|Lato:100,200,900|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap-responsive.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<title>Amey Sakhadeo | Test URL update</title>
+	</head>
+	<body>
+		 <div class="container">
+		 	<div class="row-fluid">
+    			<div class="span12">
+
+			    <h2>Quantcast JS test 3</h2>
+          <p>
+            URL change tracking
+          </p>
+				</div>
+			</div>
+
+		</div>
+    <!--  Quantcast Tag -->
+	   <script>
+        var ezt = ezt ||[];
+        ezt.push({qacct: 'p-vn4EUWUq3rLP9'});
+
+    </script>
+
+    <script src="http://edge.quantserve.com/quant.js"></script>
+    <a href="#foobar">Static Link</a>
+    <a id="jsLink" href="/hello/world">pushState Link</a>
+    
+    <script>
+      $(function() {
+         $('#jsLink').on('click', function(e) {
+            history.pushState(null, '/hello/world', '/hello/world');
+            e.preventDefault();
+            e.stopPropagation();
+         });
+      });
+    </script>
+    <noscript>
+      <img src="//pixel.quantserve.com/pixel/p-vn4EUWUq3rLP9.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    <!-- End Quantcast Tag -->
+
+
+   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
+        </body>
+
+</html>
