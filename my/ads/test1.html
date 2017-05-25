@@ -17,7 +17,7 @@
 
 			    <h2>Quantcast JS test 1</h2>
           <p>
-            Lorem ipsum dolor sit amet
+            URL overrides
           </p>
 				</div>
 			</div>
@@ -25,34 +25,21 @@
 		</div>
     <!--  Quantcast Tag -->
 	   <script>
-        var qevents = qevents ||[];
-        var ezt = ezt ||[];
-
-        qevents.push({qacct: 'p-vn4EUWUq3rLP9'});
-        ezt.push({qacct: 'p-vn4EUWUq3rLP9'});
+        var ezt = ezt || [];
+        ezt.push({qacct: 'p-vn4EUWUq3rLP9', url: 'http://amey.sakhadeo.com/test1.html'});
 
     </script>
 
-    <script src="http://edge.quantserve.com/aquant.js?a=p-vn4EUWUq3rLP9"></script>
+    <script src="http://pixel.quantserve.com/aquant.js?a=p-vn4EUWUq3rLP9"></script>
     <noscript>
-      <img src="//pixel.quantserve.com/pixel/p-vn4EUWUq3rLP9.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+      <img src="//pixel.quantserve.com/pixel/p-vn4EUWUq3rLP9.gif" 
+	   style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
     </noscript>
     <!-- End Quantcast Tag -->
 
 
    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="https://apis.google.com/js/client.js?onload=onGApiLoad"></script>
-        <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'UA-44183424-1', 'ameyms.com');
-              ga('send', 'pageview');
-
-        </script>
         </body>
 
 </html>
