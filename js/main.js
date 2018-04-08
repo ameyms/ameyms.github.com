@@ -42,8 +42,8 @@ var ameyms = { } || ameyms;
             // loadLatestPost();
         } else {
             gplusDescEl.html( 'Well, I don&apos;t know what to say. ' +
-              'But my <a href="https://plus.google.com/101640091246231296580/about">' +
-              'Google+ profile</a> would tell you a thing or two about me.' );
+              'But my <a href="https://fb.me/ameyms">' +
+              'Facebook profile</a> would tell you a thing or two about me.' );
         }
 
     };
